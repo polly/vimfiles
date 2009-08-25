@@ -185,3 +185,6 @@ set smartcase
 " Tags
 let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
 
+" Store vim backups and *.swp files in ~/.vimtmp with a unique name
+set backupdir=~/.vimtmp//
+set directory=~/.vimtmp//
