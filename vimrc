@@ -188,3 +188,15 @@ let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
 " Store vim backups and *.swp files in ~/.vimtmp with a unique name
 set backupdir=~/.vimtmp//
 set directory=~/.vimtmp//
+
+"map to bufexplorer
+nnoremap <C-B> :BufExplorer<cr>
+
+" Map prev and next buffer to ctrl-left and ctrl-right
+map <C-right> <ESC>:bn<CR>
+map <C-left> <ESC>:bp<CR>
+
+" Toggle current and prev buffer with ctrl-up and ctrl-down
+map <C-up> <ESC>:e #<CR>
+map <C-down> <ESC>:e #<CR>
+
