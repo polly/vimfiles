@@ -74,8 +74,8 @@ set expandtab
 " Always display the status line
 set laststatus=2
 
-" \ is the leader character
-let mapleader = "\\"
+" , is the leader character
+let mapleader = ","
 
 " Edit the README_FOR_APP (makes :R commands work)
 map <Leader>R :e doc/README_FOR_APP<CR>
