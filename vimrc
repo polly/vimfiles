@@ -134,7 +134,7 @@ au! BufRead,BufNewFile *.haml         setfiletype haml
 nmap <F1> <Esc>
 
 " Map NERDTree to ctrl-q
-nmap <C-q> :NERDTree<CR>
+nmap <C-q> :NERDTree<CR><CR>
 
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
