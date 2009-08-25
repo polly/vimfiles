@@ -97,6 +97,14 @@ map <Leader>sv :RSview
 map <Leader>su :RSunittest 
 map <Leader>sf :RSfunctionaltest 
 
+" Setup FuzzyFinder TextMate
+let g:fuzzy_ignore = "*.log"
+let g:fuzzy_ignore = "vendor/*"
+let g:fuzzy_matching_limit = 70
+
+map <leader>t :FuzzyFinderTextMate<CR>
+map <leader>b :FuzzyFinderBuffer<CR>
+
 " Hide search highlighting
 map <Leader>h :set invhls <CR>
 
