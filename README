@@ -3,4 +3,6 @@ Usage:
     Clone this repo into your home directory either as .vim
     and create a .vimrc and edit it to look like this:
 
-      source ~/.vim/vimrc  " Linux
+      source ~/.vim/vimrc
+
+    Also create a .vimtmp folder in your home directory
