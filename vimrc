@@ -7,10 +7,10 @@ set backspace=indent,eol,start
 
 set nobackup
 set nowritebackup
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
+set history=50    " keep 50 lines of command line history
+set ruler         " show the cursor position all the time
+set showcmd       " display incomplete commands
+set incsearch     " do incremental searching
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -54,7 +54,7 @@ if has("autocmd")
 
 else
 
-  set autoindent		" always set autoindenting on
+  set autoindent " always set autoindenting on
 
 endif " has("autocmd")
 
@@ -81,21 +81,21 @@ let mapleader = ","
 map <Leader>R :e doc/README_FOR_APP<CR>
 
 " Leader shortcuts for Rails commands
-map <Leader>m :Rmodel 
-map <Leader>c :Rcontroller 
-map <Leader>v :Rview 
-map <Leader>u :Runittest 
-map <Leader>f :Rfunctionaltest 
-map <Leader>tm :RTmodel 
-map <Leader>tc :RTcontroller 
-map <Leader>tv :RTview 
-map <Leader>tu :RTunittest 
-map <Leader>tf :RTfunctionaltest 
-map <Leader>sm :RSmodel 
-map <Leader>sc :RScontroller 
-map <Leader>sv :RSview 
-map <Leader>su :RSunittest 
-map <Leader>sf :RSfunctionaltest 
+map <Leader>m :Rmodel
+map <Leader>c :Rcontroller
+map <Leader>v :Rview
+map <Leader>u :Runittest
+map <Leader>f :Rfunctionaltest
+map <Leader>tm :RTmodel
+map <Leader>tc :RTcontroller
+map <Leader>tv :RTview
+map <Leader>tu :RTunittest
+map <Leader>tf :RTfunctionaltest
+map <Leader>sm :RSmodel
+map <Leader>sc :RScontroller
+map <Leader>sv :RSview
+map <Leader>su :RSunittest
+map <Leader>sf :RSfunctionaltest
 
 " Setup FuzzyFinder TextMate
 let g:fuzzy_ignore = "*.log"
@@ -200,3 +200,11 @@ map <C-left> <ESC>:bp<CR>
 map <C-up> <ESC>:e #<CR>
 map <C-down> <ESC>:e #<CR>
 
+
+" Maps OmniCompltet to tab
+imap <C-Space> <C-X><C-O>
+
+" Ruby OmniComplete setup
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
