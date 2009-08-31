@@ -134,7 +134,7 @@ au! BufRead,BufNewFile *.haml         setfiletype haml
 nmap <F1> <Esc>
 
 " Map NERDTree to ctrl-q
-nmap <C-q> :NERDTree<CR><CR>
+nmap <C-q> :NERDTree<CR>
 
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
@@ -209,4 +209,5 @@ autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
-match Error /\%80v.\+/
+" Consider more than 110 characters in a row an error
+match Error /\%110v.\+/
