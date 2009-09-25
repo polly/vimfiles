@@ -128,7 +128,13 @@ imap <C-Tab> <C-N>
 vmap D y'>p
 
 " For Haml
-au! BufRead,BufNewFile *.haml         setfiletype haml
+au! BufRead,BufNewFile *.haml setfiletype haml
+
+" For jQuery
+au! BufRead,BufNewFile *.js setfiletype javascript.jquery
+
+" For Common Lisp
+au FileType lisp map <C-H> :Clhelp <C-R><C-W><CR>
 
 " No Help, please
 nmap <F1> <Esc>
